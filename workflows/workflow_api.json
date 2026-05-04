@@ -1,0 +1,60 @@
+{
+  "1": {
+    "inputs": {
+      "model_version": "Fun-CosyVoice3-0.5B",
+      "download_source": "HuggingFace",
+      "device": "auto",
+      "force_redownload": false,
+      "force_reload": false
+    },
+    "class_type": "FL_CosyVoice3_ModelLoader",
+    "_meta": {
+      "title": "FL CosyVoice3 Model Loader"
+    }
+  },
+  "2": {
+    "inputs": {
+      "text": "Команда исполнена, повелитель, какие будут дальнейщие указания?",
+      "speed": 1,
+      "seed": 1097152890,
+      "text_frontend": true,
+      "model": [
+        "1",
+        0
+      ],
+      "reference_audio": [
+        "3",
+        0
+      ]
+    },
+    "class_type": "FL_CosyVoice3_ZeroShot",
+    "_meta": {
+      "title": "FL CosyVoice3 Zero-Shot Clone"
+    }
+  },
+  "3": {
+    "inputs": {
+      "audio": "audio/acolyte_phrases_cut.wav",
+      "audioUI": "/api/view?filename=acolyte_phrases_cut%20(1).mp4&type=input&subfolder=&rand=0.6275351106756977"
+    },
+    "class_type": "LoadAudio",
+    "_meta": {
+      "title": "Загрузить аудио"
+    }
+  },
+  "6": {
+    "inputs": {
+      "filename_prefix": "audio/ComfyUI",
+      "quality": "V0",
+      "audioUI": "",
+      "audio": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "SaveAudioMP3",
+    "_meta": {
+      "title": "Сохранить аудио (MP3)"
+    }
+  }
+}
