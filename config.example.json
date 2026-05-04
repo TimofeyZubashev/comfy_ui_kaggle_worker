@@ -1,0 +1,10 @@
+{
+  "server_url": "https://your-domain.com",
+  "worker_token": "CHANGE_ME",
+  "poll_interval_seconds": 5,
+  "comfyui_url": "http://127.0.0.1:8188",
+  "workflow_path": "/kaggle/working/comfyui-kaggle-worker/workflows/workflow_api.json",
+  "input_dir": "/kaggle/working/input",
+  "output_dir": "/kaggle/working/ComfyUI/output"
+}
+

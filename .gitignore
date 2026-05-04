@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# ComfyUI heavy/runtime files
+ComfyUI/
+models/
+input/
+output/
+temp/
+logs/
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# Secrets
+config.json
+.env
+*.key
+
+# macOS
+.DS_Store
+
+# Kaggle
+.kaggle/
+

@@ -1,0 +1,15 @@
+requests
+matplotlib.pyplot
+fastapi
+uvicorn
+pydantic
+python-multipart
+soundfile
+librosa
+numpy
+scipy
+torch
+torchaudio
+transformers
+huggingface_hub
+
