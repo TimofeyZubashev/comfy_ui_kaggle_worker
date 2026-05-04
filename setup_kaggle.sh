@@ -49,6 +49,17 @@ mkdir -p "$COMFYUI_DIR/output"
 mkdir -p "$COMFYUI_DIR/models"
 mkdir -p "$COMFYUI_DIR/models/cosyvoice"
 
+echo "=== Copying input audio files into ComfyUI/input/audio ==="
+
+mkdir -p "$COMFYUI_DIR/input/audio"
+
+if [ -d "$WORKER_DIR/input_audio" ]; then
+  cp -r "$WORKER_DIR/input_audio/"* "$COMFYUI_DIR/input/audio/"
+  echo "Input audio files copied to $COMFYUI_DIR/input/audio"
+else
+  echo "No input_audio directory found, skipping"
+fi
+
 echo "=== Setup finished ==="
 
 
